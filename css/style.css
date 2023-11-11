@@ -1,0 +1,91 @@
+/* 
+
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px 
+
+*/
+
+/* xsmall */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 45vw;
+  height: 45vw;
+}
+
+@media screen and (min-width: 768px) {
+  .square {
+    width: calc(98vw / 4);
+    height: calc(98vw / 4);
+  }
+}
+
+/* Mobile first */
+.element-1 {
+  background-color: red;
+}
+
+.element-2 {
+  background-color: aqua;
+}
+
+/* small */
+@media screen and (min-width: 576px) {
+  .element-1 {
+    background-color: blue;
+  }
+}
+/* Medium */
+@media screen and (min-width: 768px) {
+  .element-1 {
+    background-color: orange;
+  }
+}
+/* XL */
+@media screen and (min-width: 1200px) {
+  .element-1 {
+    background-color: purple;
+  }
+}
+/* XXL */
+@media screen and (min-width: 1400px) {
+  .element-1 {
+    background-color: pink;
+  }
+}
+
+
+/* Desktop first */
+.element-3 {
+  background-color: darkorange;
+}
+.element-4 {
+  background-color:deeppink;
+}
+
+@media screen and (max-width: 768px) {
+  .element-3 {
+    background-color: brown;
+  }  
+}
+
+@media screen and (max-width: 576px) {
+  .element-3 {
+    background-color:yellow;
+  }  
+}
+
